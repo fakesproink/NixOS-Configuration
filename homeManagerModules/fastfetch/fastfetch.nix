@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: {
+{ pkgs, lib, config, inputs, ... }: {
   options = {
     fastfetch.enable =
       lib.mkEnableOption "fastfetch";

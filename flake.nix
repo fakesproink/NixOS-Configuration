@@ -37,9 +37,8 @@
 
     homeConfigurations."sproink@sproink-nix" = home-manager.lib.homeManagerConfiguration rec {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-
       modules = [
-        ./home.nix
+        ./homeManagerModules/hyprland/hyprland.nix
         {
           wayland.windowManager.hyprland = {
             package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
