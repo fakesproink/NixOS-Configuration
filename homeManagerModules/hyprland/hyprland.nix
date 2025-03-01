@@ -1,4 +1,4 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ pkgs, lib, config, ... }: {
   options = {
     hyprland.enable =
       lib.mkEnableOption "hyprland";
@@ -44,6 +44,7 @@
           "hyprpaper"
           "swaync"
           "systemctl --user enable --now hyprpolkitagent.service"
+          "hyprctl setcursor Nordic-cursors 24"
         ];
 
         general = {
@@ -92,11 +93,11 @@
             "border, 1, 5.39, easeOutQuint"
             "windows, 1, 4.79, easeOutQuint"
             "windowsOut, 1, 1.49, linear, popin 87%"
-            "windowsIn, 1, 4.1, easeoutQuint, popin 87%"
+            "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
             "fadeIn, 1, 1.73, almostLinear"
             "fadeOut, 1, 1.46, almostLinear"
             "fade, 1, 3.03, quick"
-            "layers, 1, 3.81, easeoutQuint"
+            "layers, 1, 3.81, easeOutQuint"
             "layersIn, 1, 4, easeOutQuint, fade"
             "layersOut, 1, 1.5, linear, fade"
             "fadeLayersIn, 1, 1.79, almostLinear"
@@ -137,11 +138,11 @@
           "$mainMod, J, togglesplit,"
           "$mainMod, B, exec, $browser"
           "$mainMod, PRINT, exec, hyprshot -m region"
-          "$mainMod, SHIFT, N, exec, swaync-client -t -sw"
-          "$mainMod, SHIFT, H, movewindow, l"
-          "$mainMod, SHIFT, L, movewindow, r"
-          "$mainMod, SHIFT, K, movewindow, u"
-          "$mainMod, SHIFT, J, movewindow, d"
+          "$mainMod SHIFT, N, exec, swaync-client -t -sw"
+          "$mainMod SHIFT, H, movewindow, l"
+          "$mainMod SHIFT, L, movewindow, r"
+          "$mainMod SHIFT, K, movewindow, u"
+          "$mainMod SHIFT, J, movewindow, d"
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
           "$mainMod, up, movefocus, u"
@@ -155,9 +156,9 @@
           "$mainMod, 7, workspace, 7"
           "$mainMod, 8, workspace, 8"
           "$mainMod, 9, workspace, 9"
-          "$mainMod, 10, workspace, 10"
-          "$mainMod, SHIFT, 1, workspace, 11"
-          "$mainMod, SHIFT, 2, workspace, 12"
+          "$mainMod, 0, workspace, 10"
+          "$mainMod SHIFT, 1, workspace, 11"
+          "$mainMod SHIFT, 2, workspace, 12"
           "$mainMod, 1, movetoworkspace, 1"
           "$mainMod, 2, movetoworkspace, 2"
           "$mainMod, 3, movetoworkspace, 3"
@@ -168,8 +169,8 @@
           "$mainMod, 8, movetoworkspace, 8"
           "$mainMod, 9, movetoworkspace, 9"
           "$mainMod, 10, movetoworkspace, 10"
-          "$mainMod, SHIFT, 1, movetoworkspace, 11"
-          "$mainMod, SHIFT, 2, movetoworkspace, 12"
+          "$mainMod SHIFT, Z, movetoworkspace, 11"
+          "$mainMod SHIFT, X, movetoworkspace, 12"
         ];
 
         input = {

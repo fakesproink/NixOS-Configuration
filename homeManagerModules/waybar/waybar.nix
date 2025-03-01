@@ -1,4 +1,4 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ pkgs, lib, config, ... }: {
   options = {
     waybar.enable =
       lib.mkEnableOption "waybar";
@@ -31,9 +31,9 @@
             "tray"
             "cpu_text"
             "cpu"
+            "temperature"
             "memory"
             "battery"
-            "network"
             "pulseaudio"
           ];
 
@@ -62,6 +62,11 @@
             };
           };
 
+          temperature = {
+            format = "temp: {temperatureC}°C";
+            interval = 2;
+          };
+
           memory = {
             format = "mem {percentage}%";
             interval = 2;
@@ -83,14 +88,6 @@
             };
 
             tooltip = false;
-          };
-
-          network = {
-            format-wifi = "wifi {bandwithDownBits}";
-            format-ethernet = "enth {bandwithDownBits}";
-            format-disconnected = "no network";
-            interval = 5;
-            tooltip = true;
           };
 
           pulseaudio = {

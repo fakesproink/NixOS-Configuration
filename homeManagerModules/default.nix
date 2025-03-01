@@ -10,6 +10,7 @@
     ./nwg/nwg.nix
     ./hyprland/hyprland.nix
     ./hyprshot/hyprshot.nix
+    ./wofi/wofi.nix
 
     # terminal
     ./kitty/kitty.nix

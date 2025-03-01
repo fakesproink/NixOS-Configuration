@@ -43,6 +43,7 @@
   git.enable = true;
   fastfetch.enable = true;
   cava.enable = true;
+  wofi.enable = true;
 
   zsh.enable = true;
   customfonts.enable = true;
