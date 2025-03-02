@@ -31,7 +31,6 @@
             "tray"
             "cpu_text"
             "cpu"
-            "temperature"
             "memory"
             "battery"
             "pulseaudio"
@@ -60,11 +59,6 @@
             states = {
               critical = 90;
             };
-          };
-
-          temperature = {
-            format = "temp: {temperatureC}°C";
-            interval = 2;
           };
 
           memory = {
