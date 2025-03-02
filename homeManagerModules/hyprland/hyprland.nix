@@ -12,17 +12,6 @@
       hyprpolkitagent
     ];
 
-    services.hyprpaper = {
-      enable = true;
-      settings = {
-        preload = [ "./nordic_mountains.png" ];
-        wallpaper = [
-          "eDP-1, ./nordic_mountains.png"
-          "HDMI-A-1, ./nordic_mountains.png"
-        ];
-      };
-    };
-
     wayland.windowManager.hyprland = {
       enable = true;
       systemd = {
@@ -168,7 +157,7 @@
           "$mainMod, 7, movetoworkspace, 7"
           "$mainMod, 8, movetoworkspace, 8"
           "$mainMod, 9, movetoworkspace, 9"
-          "$mainMod, 10, movetoworkspace, 10"
+          "$mainMod, 0, movetoworkspace, 10"
           "$mainMod SHIFT, Z, movetoworkspace, 11"
           "$mainMod SHIFT, X, movetoworkspace, 12"
         ];

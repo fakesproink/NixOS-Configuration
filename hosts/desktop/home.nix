@@ -36,6 +36,7 @@
   nwg.enable = true;
   hyprshot.enable = true;
   hyprland.enable = true;
+  hyprpaper.enable = true;
 
   kitty.enable = true;
   unzip.enable = true;
