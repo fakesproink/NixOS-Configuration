@@ -36,7 +36,7 @@
   nwg.enable = true;
   hyprshot.enable = true;
   hyprland.enable = true;
-  hyprpaper.enable = true;
+  swaync.enable = true;
 
   kitty.enable = true;
   unzip.enable = true;
@@ -55,6 +55,11 @@
     theme = {
       package = pkgs.nordic;
       name = "Nordic";
+    };
+
+    iconTheme = {
+      name = "Nordic Papirus";
+      package = pkgs.papirus-nord;
     };
   };
 

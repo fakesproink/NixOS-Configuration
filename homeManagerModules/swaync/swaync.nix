@@ -31,7 +31,7 @@
         timeout-critical = 0;
         notification-window-width = 500;
         keyboard-shortcuts = true;
-        image-visibility = always;
+        image-visibility = "when-available";
         transition-time = 200;
         hide-on-clear = true;
         hide-on-action = true;

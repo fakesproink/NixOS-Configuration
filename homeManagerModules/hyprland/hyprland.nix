@@ -12,6 +12,15 @@
       hyprpolkitagent
     ];
 
+    services.hyprpaper = {
+      enable = true;
+
+      settings = {
+        preload = [ "${./assets/nord_mountains.png}" ];
+        wallpaper = [ ", ${./assets/nord_mountains.png}" ];
+      };
+    };
+
     wayland.windowManager.hyprland = {
       enable = true;
       systemd = {
