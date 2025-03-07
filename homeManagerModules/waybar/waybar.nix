@@ -102,7 +102,7 @@
         }
       ];
 
-      style = ./style.css;
+      style = lib.mkDefault ./style.css;
     };
   };
 }

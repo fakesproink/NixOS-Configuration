@@ -1,12 +1,12 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ lib, config,  ... }: {
   options = {
     swaync.enable =
       lib.mkEnableOption "swaync";
   };
 
   config = lib.mkIf config.swaync.enable {
-    service.swaync = {
-      package = pkgs.swaynotificationcenter;
+    services.swaync = {
+      enable = true;
       settings = {
         positionX = "right";
         control-center-positionX = "none";
@@ -72,8 +72,7 @@
           };
         };
       };
+      # style = builtins.readFile "${./style.css}";
     };
-
-    style = ./style.css;
   };
 }

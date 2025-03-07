@@ -1,9 +1,13 @@
+/*
+
 @define-color foreground rgb(248, 248, 242);
 @define-color background #434c5e;
 @define-color background-alpha #2e3440;
 @define-color accent #8fbcbb;
 @define-color current-line rgb(68, 71, 90);
 @define-color comment rgb(98, 114, 164);
+
+*/
 
 .notification-row {
     transition: all 200ms ease;

@@ -19,14 +19,19 @@
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
+
+    stylix = {
+      url = "github:danth/stylix";
+    };
   };
 
-  outputs = { nixpkgs, nur, hyprland, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, ... }@inputs: {
     nixosConfigurations = {
       sproink-nix = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
+          stylix.nixosModules.stylix
           nur.modules.nixos.default
           inputs.home-manager.nixosModules.home-manager
           ./hosts/desktop/configuration.nix
@@ -39,6 +44,7 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         ./homeManagerModules/hyprland/hyprland.nix
+        ./home.nix
         {
           wayland.windowManager.hyprland = {
             package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;

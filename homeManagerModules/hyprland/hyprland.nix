@@ -16,8 +16,8 @@
       enable = true;
 
       settings = {
-        preload = [ "${./assets/nord_mountains.png}" ];
-        wallpaper = [ ", ${./assets/nord_mountains.png}" ];
+        preload = [ "${./assets/nordic_mountains.png}" ];
+        wallpaper = [ ", ${./assets/nordic_mountains.png}" ];
       };
     };
 
@@ -33,7 +33,7 @@
 
       settings = {
         "$terminal" = "kitty";
-        "$fileManager" = "thunar";
+        "$fileManager" = "dolphin";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
 
@@ -49,8 +49,8 @@
           gaps_in = 5;
           gaps_out = 20;
           border_size = 2;
-          "col.active_border" = "rgb(8fbcbb)";
-          "col.inactive_border" = "rgb(3b4252)";
+          #"col.active_border" = "rgb(8fbcbb)";
+          #"col.inactive_border" = "rgb(3b4252)";
           resize_on_border = true;
           allow_tearing = false;
           layout = "dwindle";
@@ -65,7 +65,7 @@
             enabled = true;
             range = 4;
             render_power = 3;
-            color = "rgba(1a1a1aee)";
+            #color = "rgba(1a1a1aee)";
           };
 
           blur = {
@@ -155,20 +155,22 @@
           "$mainMod, 8, workspace, 8"
           "$mainMod, 9, workspace, 9"
           "$mainMod, 0, workspace, 10"
-          "$mainMod SHIFT, 1, workspace, 11"
-          "$mainMod SHIFT, 2, workspace, 12"
-          "$mainMod, 1, movetoworkspace, 1"
-          "$mainMod, 2, movetoworkspace, 2"
-          "$mainMod, 3, movetoworkspace, 3"
-          "$mainMod, 4, movetoworkspace, 4"
-          "$mainMod, 5, movetoworkspace, 5"
-          "$mainMod, 6, movetoworkspace, 6"
-          "$mainMod, 7, movetoworkspace, 7"
-          "$mainMod, 8, movetoworkspace, 8"
-          "$mainMod, 9, movetoworkspace, 9"
-          "$mainMod, 0, movetoworkspace, 10"
-          "$mainMod SHIFT, Z, movetoworkspace, 11"
-          "$mainMod SHIFT, X, movetoworkspace, 12"
+          "$mainMod, -, workspace, 11"
+          "$mainMod, =, workspace, 12"
+          "$mainMod SHIFT, 1, movetoworkspace, 1"
+          "$mainMod SHIFT, 2, movetoworkspace, 2"
+          "$mainMod SHIFT, 3, movetoworkspace, 3"
+          "$mainMod SHIFT, 4, movetoworkspace, 4"
+          "$mainMod SHIFT, 5, movetoworkspace, 5"
+          "$mainMod SHIFT, 6, movetoworkspace, 6"
+          "$mainMod SHIFT, 7, movetoworkspace, 7"
+          "$mainMod SHIFT, 8, movetoworkspace, 8"
+          "$mainMod SHIFT, 9, movetoworkspace, 9"
+          "$mainMod SHIFT, 0, movetoworkspace, 10"
+          "$mainMod SHIFT, -, movetoworkspace, 11"
+          "$mainMod SHIFT, =, movetoworkspace, 12"
+          "$mainMod, mouse_down, workspace, e+1"
+          "$mainMod, mouse_up, workspace, e-1"
         ];
 
         input = {

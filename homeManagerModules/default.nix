@@ -4,13 +4,12 @@
     ./discord/discord.nix
     ./betterdiscord/betterdiscord.nix
     ./firefox/firefox.nix
-    ./thunar/thunar.nix
     ./zeditor/zeditor.nix
     ./waybar/waybar.nix
-    ./nwg/nwg.nix
     ./hyprland/hyprland.nix
     ./hyprshot/hyprshot.nix
     ./wofi/wofi.nix
+    ./swaync/swaync.nix
 
     # terminal
     ./kitty/kitty.nix

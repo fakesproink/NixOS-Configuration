@@ -30,10 +30,8 @@
   discord.enable = true;
   betterdiscord.enable = true;
   firefox.enable = true;
-  thunar.enable = true;
   zeditor.enable = true;
   waybar.enable = true;
-  nwg.enable = true;
   hyprshot.enable = true;
   hyprland.enable = true;
   swaync.enable = true;
@@ -49,19 +47,14 @@
   zsh.enable = true;
   customfonts.enable = true;
 
-  gtk = {
-    enable = true;
+  #gtk = {
+  #  enable = true;
 
-    theme = {
-      package = pkgs.nordic;
-      name = "Nordic";
-    };
-
-    iconTheme = {
-      name = "Nordic Papirus";
-      package = pkgs.papirus-nord;
-    };
-  };
+  #  theme = {
+  #    package = pkgs.nordic;
+  #    name = "Nordic";
+  #  };
+  #};
 
   xdg.userDirs = {
     enable = true;

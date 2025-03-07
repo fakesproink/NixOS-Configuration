@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: {
+{ lib, config, ... }: {
   options = {
     wofi.enable =
       lib.mkEnableOption "wofi";
@@ -7,51 +7,8 @@
   config = lib.mkIf config.wofi.enable {
     programs.wofi = {
       enable = true;
-      package = pkgs.wofi;
-      style = ''
-        window {
-            margin: 0px;
-            border: 1px solid #88c0d0;
-            background-color: #2e3440;
-        }
-
-        #input {
-            margin: 5px;
-            border: none;
-            color: #d8dee9;
-            background-color: #3b4252;
-        }
-
-        #inner-box {
-            margin: 5px;
-            border: none;
-            background-color: #2e3440;
-        }
-
-        #outer-box {
-            margin: 5px;
-            border: none;
-            background-color: #2e3440;
-        }
-
-        #scroll {
-            margin: 0px;
-            border: none;
-        }
-
-        #text {
-            margin: 5px;
-            border: none;
-            color: #d8dee9;
-        }
-
-        #entry:selected {
-            background-color: #3b4252;
-        }
-
-        #text:selected {
-            background: none;
-        }
+      style = lib.mkDefault ''
+        ${./style.css}
       '';
     };
   };
