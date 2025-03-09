@@ -7,7 +7,7 @@
     image = ./../homeManagerModules/hyprland/assets/nordic_mountains.png;
     polarity = "dark";
     autoEnable = true;
-    qt.enable = true;
+    targets.qt.enable = true;
 
     cursor = {
       package = pkgs.capitaine-cursors-themed;
