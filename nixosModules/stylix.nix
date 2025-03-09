@@ -8,6 +8,12 @@
     polarity = "dark";
     autoEnable = true;
 
+    cursor = {
+      package = pkgs.capitaine-cursors-themed;
+      name = "Capitaine Cursors (Nord)";
+      size = 24;
+    };
+
     opacity = {
       applications = 1.0;
       terminal = 1.0;

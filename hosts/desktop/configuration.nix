@@ -82,11 +82,6 @@
     #waybar
     #pavucontrol
   #];
-  environment.systemPackages = with pkgs; [
-    kdePackages.dolphin
-    kdePackages.qtsvg
-    kdePackages.qtwayland
-  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;

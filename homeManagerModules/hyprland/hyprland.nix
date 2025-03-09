@@ -42,7 +42,6 @@
           "hyprpaper"
           "swaync"
           "systemctl --user enable --now hyprpolkitagent.service"
-          "hyprctl setcursor Nordic-cursors 24"
         ];
 
         general = {
@@ -186,7 +185,7 @@
 
         env = [
           "HYPRSHOT_DIR, pictures/screenshots"
-          "GTK_THEME, Nordic"
+          "XCURSOR,Capitaine Cursors (Nord)"
           "NIXOS_OZONE_WL, 1"
         ];
       };

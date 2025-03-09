@@ -9,6 +9,7 @@
     ./hyprland/hyprland.nix
     ./hyprshot/hyprshot.nix
     ./wofi/wofi.nix
+    ./dolphin/dolphin.nix
     ./swaync/swaync.nix
 
     # terminal

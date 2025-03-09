@@ -10,14 +10,9 @@
           targets = {
             waybar = {
               enable = false;
-              addCss = true;
             };
 
             wofi = {
-              enable = true;
-            };
-
-            gtk = {
               enable = true;
             };
 
