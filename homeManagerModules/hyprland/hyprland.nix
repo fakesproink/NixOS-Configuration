@@ -187,6 +187,7 @@
           "HYPRSHOT_DIR, pictures/screenshots"
           "XCURSOR,Capitaine Cursors (Nord)"
           "NIXOS_OZONE_WL, 1"
+          "QT_QPA_PLATFORMTHEME,qt5ct"
         ];
       };
 
