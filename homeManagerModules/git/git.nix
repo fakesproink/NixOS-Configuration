@@ -9,6 +9,7 @@
       enable = true;
       userName = "sproinker";
       userEmail = "bsushi308@gmail.com";
+      git-credential-oauth.enable = true;
     };
   };
 }

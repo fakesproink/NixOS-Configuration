@@ -19,6 +19,10 @@
             zed = {
               enable = false;
             };
+
+            qt = {
+              enable = true;
+            };
           };
         };
       }
