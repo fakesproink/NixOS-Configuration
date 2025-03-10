@@ -9,7 +9,7 @@
       wofi-emoji
       wl-clipboard
       pavucontrol
-      hyprpolkitagent
+      lxqt.lxqt-lxqt-policykit
     ];
 
     services.hyprpaper = {
@@ -33,7 +33,7 @@
 
       settings = {
         "$terminal" = "kitty";
-        "$fileManager" = "dolphin";
+        "$fileManager" = "thunar";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
 
@@ -41,7 +41,7 @@
           "waybar"
           "hyprpaper"
           "swaync"
-          "systemctl --user enable --now hyprpolkitagent.service"
+          "lxqt-policykit-agent"
         ];
 
         general = {
