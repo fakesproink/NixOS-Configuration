@@ -18,6 +18,7 @@
     ./unzip/unzip.nix
     ./neovim/neovim.nix
     ./git/git.nix
+    ./gh/gh.nix
     ./fastfetch/fastfetch.nix
     ./cava/cava.nix
 

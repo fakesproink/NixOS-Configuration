@@ -8,6 +8,7 @@
     home.packages = with pkgs; [
       git-credential-manager
     ];
+
     programs.git = {
       enable = true;
       userName = "sproinker";

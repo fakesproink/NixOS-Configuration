@@ -42,6 +42,7 @@
   unzip.enable = true;
   neovim.enable = true;
   git.enable = true;
+  gh.enable = true;
   fastfetch.enable = true;
   cava.enable = true;
   wofi.enable = true;
