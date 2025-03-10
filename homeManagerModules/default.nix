@@ -10,6 +10,7 @@
     ./hyprshot/hyprshot.nix
     ./wofi/wofi.nix
     ./dolphin/dolphin.nix
+    ./thunar/thunar.nix
     ./swaync/swaync.nix
 
     # terminal

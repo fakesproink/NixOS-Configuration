@@ -35,7 +35,8 @@
   hyprshot.enable = true;
   hyprland.enable = true;
   swaync.enable = true;
-  dolphin.enable = true;
+  # dolphin.enable = true;
+  thunar.enable = true;
 
   kitty.enable = true;
   unzip.enable = true;
