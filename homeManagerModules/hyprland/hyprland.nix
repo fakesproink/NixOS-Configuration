@@ -9,7 +9,7 @@
       wofi-emoji
       wl-clipboard
       pavucontrol
-      lxqt.lxqt-lxqt-policykit
+      lxqt.lxqt-policykit
     ];
 
     services.hyprpaper = {
