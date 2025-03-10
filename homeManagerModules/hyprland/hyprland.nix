@@ -170,9 +170,6 @@
           "$mainMod SHIFT, =, movetoworkspace, 12"
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
-        ];
-
-        bimdm = [
           "$mainMod, mouse:272, movewindow"
           "$mainMod, mouse:273, resizewindow"
         ];
