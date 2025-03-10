@@ -172,6 +172,11 @@
           "$mainMod, mouse_up, workspace, e-1"
         ];
 
+        bimdm = [
+          "$mainMod, mouse:272, movewindow"
+          "$mainMod, mouse:273, resizewindow"
+        ];
+
         input = {
           kb_layout = "us";
           follow_mouse = 1;
