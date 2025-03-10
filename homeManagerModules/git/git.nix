@@ -5,12 +5,17 @@
   };
 
   config = lib.mkIf config.git.enable {
+    home.packages = with pkgs; [
+      git-credential-manager
+    ];
     programs.git = {
       enable = true;
       userName = "sproinker";
       userEmail = "bsushi308@gmail.com";
       extraConfig = {
-        credential.helper = "oauth";
+        credential.helper = "manager";
+        credential."https://github.com".username = "fakesproink";
+        credential.credentialStore = "cache";
       };
     };
   };
