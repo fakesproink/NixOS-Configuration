@@ -2,7 +2,7 @@
 
 this is my config for NixOS with Home Manager. feel free to look around and copy if you want!
 
-screenshots
+# screenshots
 ![desktop1.png](screenshots/desktop1.png)
 ![desktop2.png](screenshots/desktop2.png)
 ![desktop3.png](screenshots/desktop3.png)
