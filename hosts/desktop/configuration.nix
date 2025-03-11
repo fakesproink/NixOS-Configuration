@@ -29,7 +29,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
   services.xserver.enable = true;
   programs.hyprland.enable = true;
-  services.displayManager.sddm.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
    services.pipewire = {
      enable = true;
      pulse.enable = true;
