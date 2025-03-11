@@ -6,6 +6,8 @@
 
   config = lib.mkIf config.git.enable {
     home.packages = with pkgs; [
+      pass
+      pinentry
       git-credential-manager
     ];
 
@@ -18,6 +20,11 @@
         credential."https://github.com".username = "fakesproink";
         credential.credentialStore = "cache";
       };
+    };
+
+    programs.gpg.enable = true;
+    services.gpg-agent = {
+      enable = true;
     };
   };
 }
