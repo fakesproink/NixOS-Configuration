@@ -61,6 +61,7 @@
 
   xdg.userDirs = {
     enable = true;
+    desktop = "$HOME/desktop";
     documents = "$HOME/documents";
     download = "$HOME/downloads";
     pictures = "$HOME/pictures";
