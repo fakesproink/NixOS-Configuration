@@ -51,6 +51,7 @@
 
   services.udisks2.enable = true;
   services.gvfs.enable = true;
+  boot.kernelParams = [ "quiet" ];
 
   nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
