@@ -26,10 +26,16 @@
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain
+
+  environment.systemPackages = with pkgs; [
+    openrgb-with-all-plugins
+  ];
+
   i18n.defaultLocale = "en_US.UTF-8";
   services.xserver.enable = true;
   programs.hyprland.enable = true;
+  services.hardware.openrgb.enable = true;
   services.xserver.displayManager.gdm.enable = true;
    services.pipewire = {
      enable = true;
