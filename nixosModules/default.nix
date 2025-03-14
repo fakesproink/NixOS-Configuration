@@ -4,5 +4,6 @@
     ./stylix.nix
     ./boot.nix
     ./services.nix
+    ./users.nix
   ];
 }
