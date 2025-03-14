@@ -11,11 +11,6 @@
       inputs.home-manager.nixosModules.default
     ];
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.systemd-boot.consoleMode = "max";
-
   networking.hostName = "sproink-nix"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -24,54 +19,15 @@
   # Set your time zone.
   time.timeZone = "Asia/Bangkok";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain
-
   environment.systemPackages = with pkgs; [
     openrgb-with-all-plugins
   ];
 
   i18n.defaultLocale = "en_US.UTF-8";
-  services.xserver.enable = true;
-  programs.hyprland.enable = true;
-  services.hardware.openrgb.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-   services.pipewire = {
-     enable = true;
-     pulse.enable = true;
-   };
-
-  users.users.sproink = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" "input" "networkmanager" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      tree
-    ];
-    shell = pkgs.zsh;
-  };
-  programs.zsh.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
   security.polkit.enable = true;
-
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
-  boot = {
-    plymouth.enable = true;
-
-    consoleLogLevel = 0;
-    kernelParams = [
-      "quiet"
-      "splash"
-      "boot.shell_on_fail"
-      "loglevel=3"
-      "rd.systemd.show_status=false"
-      "rd.udev.log_level=3"
-      "udev.log_priority=3"
-    ];
-  };
 
   nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
