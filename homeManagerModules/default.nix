@@ -12,6 +12,7 @@
     ./dolphin/dolphin.nix
     ./thunar/thunar.nix
     ./swaync/swaync.nix
+    ./qemu/qemu.nix
 
     # terminal
     ./kitty/kitty.nix

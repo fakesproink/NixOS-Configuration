@@ -37,6 +37,7 @@
   swaync.enable = true;
   # dolphin.enable = true;
   thunar.enable = true;
+  qemu.enable = true;
 
   kitty.enable = true;
   unzip.enable = true;
