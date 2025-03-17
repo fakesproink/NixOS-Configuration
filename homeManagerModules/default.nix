@@ -17,6 +17,7 @@
     # terminal
     ./kitty/kitty.nix
     ./unzip/unzip.nix
+    ./udiskie/udiskie.nix
     ./neovim/neovim.nix
     ./git/git.nix
     ./gh/gh.nix

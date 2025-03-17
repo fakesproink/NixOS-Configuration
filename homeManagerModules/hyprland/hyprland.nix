@@ -44,6 +44,7 @@
           "hyprpaper"
           "swaync"
           "lxqt-policykit-agent"
+          "udiskie"
         ];
 
         general = {

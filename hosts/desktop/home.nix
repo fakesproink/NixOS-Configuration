@@ -47,6 +47,7 @@
   fastfetch.enable = true;
   cava.enable = true;
   wofi.enable = true;
+  udiskie.enable = true;
 
   zsh.enable = true;
   customfonts.enable = true;
