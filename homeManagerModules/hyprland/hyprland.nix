@@ -45,6 +45,7 @@
           "swaync"
           "lxqt-policykit-agent"
           "udiskie"
+          "sudo udisksctl mount --block-device /dev/sda1"
         ];
 
         general = {

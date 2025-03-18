@@ -7,6 +7,7 @@
   config = lib.mkIf config.qemu.enable  {
     home.packages = with pkgs; [
       qemu
+      spice-gtk
       quickemu
     ];
   };
