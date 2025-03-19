@@ -1,4 +1,4 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ pkgs, lib, config, ... }: {
   options = {
     discord.enable =
       lib.mkEnableOption "discord";

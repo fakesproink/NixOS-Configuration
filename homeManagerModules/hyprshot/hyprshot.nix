@@ -1,4 +1,4 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ pkgs, lib, config, ... }: {
   options = {
     hyprshot.enable =
       lib.mkEnableOption "hyprshot";

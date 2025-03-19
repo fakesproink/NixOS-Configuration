@@ -1,4 +1,4 @@
-{ pkgs, lib, config, inputs, ... }: {
+{ pkgs, lib, config, ... }: {
   options = {
     betterdiscord.enable =
       lib.mkEnableOption "betterdiscord";

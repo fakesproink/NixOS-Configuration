@@ -1,4 +1,4 @@
-{ inputs, pkgs, config, ... }: {
+{ ... }: {
   imports = [
     # general/gui apps
     ./discord/discord.nix
