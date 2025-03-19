@@ -67,8 +67,9 @@
     documents = "$HOME/documents";
     download = "$HOME/downloads";
     pictures = "$HOME/pictures";
-    music = "$HOME/whatever";
-    videos = "$HOME/whatever";
+    music = "$HOME/music";
+    videos = "$HOME/videos";
+    publicShare = "$HOME/public";
   };
 
   nixpkgs = {
