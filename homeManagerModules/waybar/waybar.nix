@@ -11,9 +11,11 @@
       settings = [
         {
           layer = "top";
+          position = "top";
+          fixed-center = true;
+
           spacing = 0;
           height = 0;
-
           margin-top = 8;
           margin-right = 8;
           margin-bottom = 0;
@@ -28,18 +30,39 @@
           ];
 
           modules-right = [
-            "tray"
+            "hyprland/language"
             "cpu_text"
             "cpu"
             "memory"
             "battery"
             "pulseaudio"
+            "tray"
+            "custom/notification"
           ];
 
-          "sway/workspaces" = {
-            disable-scroll = true;
-            all-outputs = true;
+          "hyprland/language" = {
+            format = "{}";
+            format-en = "EN";
+          };
+
+          "custom/notification" = {
             tooltip = false;
+            format = "{icon}";
+            format-icons = {
+              notification = "";
+              none = "";
+              dnd-notification = "";
+              dnd-none = "";
+              inhibited-notification = "";
+              inhibited-none = "";
+              dnd-inhibited-notification = "";
+              dnd-inhibited-none = "";
+            };
+            return-type = "json";
+            exec-if = "which swaync-client";
+            on-click = "swaync-client -t -sw";
+            on-click-right = "swaync-client -d -sw";
+            escape = true;
           };
 
           tray = {

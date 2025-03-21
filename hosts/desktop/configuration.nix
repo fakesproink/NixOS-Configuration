@@ -34,6 +34,8 @@
       inherit pkgs;
     };
   };
+
+  # automounts disks, comment out if on another device
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
