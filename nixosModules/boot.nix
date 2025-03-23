@@ -9,6 +9,7 @@
     };
 
     consoleLogLevel = 0;
+    supportedFilesystems = [ "ntfs" ];
     kernelParams = [
       "quiet"
       "splash"
