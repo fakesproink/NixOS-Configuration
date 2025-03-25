@@ -9,6 +9,7 @@
       pass
       pinentry
       git-credential-manager
+      cargo
     ];
 
     programs.git = {
