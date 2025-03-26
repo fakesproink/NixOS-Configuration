@@ -4,7 +4,8 @@
 
   # system inputs
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/750fef2";
 
     home-manager = {
       url = "github:nix-community/home-manager";
