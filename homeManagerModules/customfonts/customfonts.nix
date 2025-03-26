@@ -7,6 +7,7 @@
   config = lib.mkIf config.customfonts.enable {
     home.packages = with pkgs; [
       jetbrains-mono
+      nerd-fonts.jetbrains-mono
     ];
 
     fonts.fontconfig.enable = true;

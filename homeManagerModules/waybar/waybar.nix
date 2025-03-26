@@ -31,12 +31,12 @@
 
           modules-right = [
             "hyprland/language"
+            "tray"
+            "pulseaudio"
             "cpu_text"
             "cpu"
             "memory"
             "battery"
-            "pulseaudio"
-            "tray"
             "custom/notification"
           ];
 
@@ -49,14 +49,14 @@
             tooltip = false;
             format = "{icon}";
             format-icons = {
-              notification = "";
-              none = "";
-              dnd-notification = "";
-              dnd-none = "";
-              inhibited-notification = "";
-              inhibited-none = "";
-              dnd-inhibited-notification = "";
-              dnd-inhibited-none = "";
+              notification = "󱅫";
+              none = "󰂚";
+              dnd-notification = "󰵙";
+              dnd-none = "󰂛";
+              inhibited-notification = "󱅫";
+              inhibited-none = "󰂚";
+              dnd-inhibited-notification = "󰵙";
+              dnd-inhibited-none = "󰂛";
             };
             return-type = "json";
             exec = "swaync-client -swb";
@@ -77,7 +77,7 @@
           };
 
           cpu = {
-            format = "cpu {usage}%";
+            format = "󰻠 : {usage}%";
             interval = 2;
 
             states = {
@@ -86,7 +86,7 @@
           };
 
           memory = {
-            format = "mem {percentage}%";
+            format = " : {percentage}%";
             interval = 2;
 
             states = {
@@ -109,13 +109,15 @@
           };
 
           pulseaudio = {
-            scroll-step = 5;
-            max-volume = 100;
-            format = "vol {volume}%";
-            format-bluetooth = "vol {volume}%";
-            nospacing = 1;
-            on-click = "pavucontrol";
-            tooltip = true;
+            format = "{icon} : {volume}%";
+            format-muted = "󰖁 : {volume}%";
+            format-icons = {
+              default = [
+                "󰕿"
+                "󰖀"
+                "󰕾"
+              ];
+            };
           };
 
           "hyprland/workspaces" = {
