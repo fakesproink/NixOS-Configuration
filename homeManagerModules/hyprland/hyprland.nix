@@ -172,6 +172,18 @@
           "$mainMod SHIFT, 0, movetoworkspace, 10"
           "$mainMod SHIFT, -, movetoworkspace, 11"
           "$mainMod SHIFT, =, movetoworkspace, 12"
+          "$mainMod ALT, 1, focusworkspaceoncurrentmonitor, 1"
+          "$mainMod ALT, 2, focusworkspaceoncurrentmonitor, 2"
+          "$mainMod ALT, 3, focusworkspaceoncurrentmonitor, 3"
+          "$mainMod ALT, 4, focusworkspaceoncurrentmonitor, 4"
+          "$mainMod ALT, 5, focusworkspaceoncurrentmonitor, 5"
+          "$mainMod ALT, 6, focusworkspaceoncurrentmonitor, 6"
+          "$mainMod ALT, 7, focusworkspaceoncurrentmonitor, 7"
+          "$mainMod ALT, 8, focusworkspaceoncurrentmonitor, 8"
+          "$mainMod ALT, 9, focusworkspaceoncurrentmonitor, 9"
+          "$mainMod ALT, 0, focusworkspaceoncurrentmonitor, 0"
+          "$mainMod ALT, -, focusworkspaceoncurrentmonitor, 11"
+          "$mainMod ALT, =, focusworkspaceoncurrentmonitor, 12"
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
         ];
@@ -203,20 +215,6 @@
       extraConfig = ''
         monitor=eDP-1, 1920x1080@60, 0x-220, 1
         monitor=HDMI-A-1, 1440x900@60, 1920x0, 1
-
-        workspace = 1, monitor:eDP-1, default:true
-        workspace = 2, montior:eDP-1, default:true
-        workspace = 3, monitor:eDP-1, default:true
-        workspace = 4, monitor:eDP-1, default:true
-        workspace = 5, monitor:eDP-1, default:true
-        workspace = 6, monitor:eDP-1, default:true
-
-        workspace = 7, monitor:HDMI-A-1, default:true
-        workspace = 8, monitor:HDMI-A-1, default:true
-        workspace = 9, monitor:HDMI-A-1, default:true
-        workspace = 10, monitor:HDMI-A-1, default:true
-        workspace = 11, monitor:HDMI-A-1, default:true
-        workspace = 12, monitor:HDMI-A-1, default:true
       '';
      };
   };
