@@ -40,6 +40,7 @@
   qemu.enable = true;
 
   kitty.enable = true;
+  btop.enable = true;
   unzip.enable = true;
   neovim.enable = true;
   git.enable = true;

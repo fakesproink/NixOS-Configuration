@@ -23,6 +23,7 @@
     ./gh/gh.nix
     ./fastfetch/fastfetch.nix
     ./cava/cava.nix
+    ./btop/btop.nix
 
     # system/misc
     ./zsh/zsh.nix
