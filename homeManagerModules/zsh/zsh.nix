@@ -9,6 +9,7 @@
       enable = true;
       enableCompletion = true;
       autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
       dotDir = ".config/zsh";
 
       oh-my-zsh = {
