@@ -16,11 +16,16 @@
       enable = true;
       userName = "sproinker";
       userEmail = "bsushi308@gmail.com";
-      extraConfig = {
-        credential.helper = "manager";
-        credential."https://github.com".username = "fakesproink";
-        credential.credentialStore = "cache";
+
+      signing = {
+        key = "EBD65F1874C42DFB";
+        signByDefault = true;
       };
+      #extraConfig = {
+      #  credential.helper = "manager";
+      #  credential."https://github.com".username = "fakesproink";
+      #  credential.credentialStore = "cache";
+      #};
     };
 
     programs.gpg.enable = true;

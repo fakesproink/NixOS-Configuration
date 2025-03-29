@@ -7,10 +7,6 @@
   config = lib.mkIf config.gh.enable {
     programs.gh = {
       enable = true;
-      gitCredentialHelper = {
-        enable = true;
-        hosts = [ "https://github.com" ];
-      };
     };
   };
 }
