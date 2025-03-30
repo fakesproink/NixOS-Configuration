@@ -34,7 +34,7 @@
       };
 
       settings = {
-        "$terminal" = "kitty";
+        "$terminal" = "ghostty";
         "$fileManager" = "thunar";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";

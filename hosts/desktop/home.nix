@@ -39,7 +39,7 @@
   thunar.enable = true;
   qemu.enable = true;
 
-  kitty.enable = true;
+  ghostty.enable = true;
   btop.enable = true;
   unzip.enable = true;
   neovim.enable = true;

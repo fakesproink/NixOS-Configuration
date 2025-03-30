@@ -15,7 +15,7 @@
     ./qemu/qemu.nix
 
     # terminal
-    ./kitty/kitty.nix
+    ./ghostty/ghostty.nix
     ./unzip/unzip.nix
     ./udiskie/udiskie.nix
     ./neovim/neovim.nix
