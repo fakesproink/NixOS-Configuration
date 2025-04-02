@@ -3,8 +3,9 @@
     isNormalUser = true;
     packages = with pkgs; [ tree ];
     extraGroups = [ "wheel" "input" "networkmanager" ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
-  programs.zsh.enable = true;
+  programs.fish.enable = true;
+  # programs.zsh.enable = true;
 }

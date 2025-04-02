@@ -14,14 +14,7 @@
       lxqt.lxqt-policykit
     ];
 
-    services.hyprpaper = {
-      enable = true;
-
-      settings = {
-        preload = [ "${./assets/nordic_mountains.png}" ];
-        wallpaper = [ ", ${./assets/nordic_mountains.png}" ];
-      };
-    };
+    services.hyprpaper.enable = true;
 
     wayland.windowManager.hyprland = {
       enable = true;

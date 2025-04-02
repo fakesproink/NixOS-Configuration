@@ -6,7 +6,7 @@
   config = lib.mkIf config.ghostty.enable {
     programs.ghostty = {
       enable = true;
-      enableZshIntegration = true;
+      enableFishIntegration = true;
     };
   };
 }

@@ -50,7 +50,8 @@
   wofi.enable = true;
   udiskie.enable = true;
 
-  zsh.enable = true;
+  fish.enable = true;
+  starship.enable = true;
   customfonts.enable = true;
 
   #gtk = {

@@ -26,7 +26,8 @@
     ./btop/btop.nix
 
     # system/misc
-    ./zsh/zsh.nix
+    ./fish/fish.nix
+    ./starship/starship.nix
     ./customfonts/customfonts.nix
   ];
 }
