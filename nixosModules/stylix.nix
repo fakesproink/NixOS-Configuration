@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    image = ./../homeManagerModules/hyprland/wallpaper/ign_Firewatch-2.png;
+    image = ./../homeManagerModules/hyprland/wallpaper/ign_Firewatch-2.jng;
     polarity = "dark";
     autoEnable = true;
 
