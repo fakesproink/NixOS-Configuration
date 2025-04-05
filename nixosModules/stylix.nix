@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    image = ./../homeManagerModules/hyprland/wallpaper/ynpknpp8mepb1.jpg;
+    image = ./../homeManagerModules/hyprland/wallpaper/wj08pcekrpzb1.png;
     polarity = "dark";
     autoEnable = true;
 
