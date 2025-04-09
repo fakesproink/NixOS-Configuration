@@ -9,7 +9,7 @@ this is my config for NixOS with Home Manager. feel free to look around and copy
 
 # info:
 - browser: firefox
-- terminal: kitty
+- terminal: ghostty
 - shell: fish
 - editor: zed, neovim (WIP)
 - window manager: hyprland
