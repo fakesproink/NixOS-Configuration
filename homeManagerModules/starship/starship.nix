@@ -19,7 +19,7 @@
           "[](fg:#81a1c1 bg:#8fbcbb)"
           "$git_branch"
           "$git_status"
-          "[](fg:base07 bg:#88c0d0)"
+          "[](fg:base07 bg:#a3be8c)"
           "$c"
           "$rust"
           "$golang"
@@ -29,7 +29,7 @@
           "$kotlin"
           "$haskell"
           "$python"
-          "[](fg:#88c0d0 bg:base03)"
+          "[](fg:#a3be8c bg:base03)"
           "$time"
           "[ ](fg:base03)"
           "$line_break"
@@ -79,50 +79,50 @@
 
         nodejs = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         c = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         rust = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         php = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         java = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         kotlin = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         haskell = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         python = {
           symbol = "";
-          style = "bg:#88c0d0";
-          format = "[[ $symbol ($version) ](fg:base06 bg:#88c0d0)]($style)";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
 
         time = {

@@ -28,7 +28,7 @@
 
   outputs = { nixpkgs, nur, hyprland, home-manager, stylix, ... }@inputs: {
     nixosConfigurations = {
-      sproink-nix = nixpkgs.lib.nixosSystem rec {
+      sproink-nix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [

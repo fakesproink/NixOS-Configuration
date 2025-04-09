@@ -119,6 +119,11 @@
             "key": "│ ├󰓡",
             "keyColor": "green"
         },
+	{
+	    "type": "sound",
+	    "key": " SND",
+	    "keyColor": "cyan"
+	},
         {
             "type": "custom",
             "format": "└{$1}{$1}┘",
