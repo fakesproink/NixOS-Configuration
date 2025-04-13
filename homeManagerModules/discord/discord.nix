@@ -7,6 +7,7 @@
   config = lib.mkIf config.discord.enable {
     home.packages = with pkgs; [
       discord
+      betterdiscordctl
     ];
 
     home.file.".config/discord/settings.json".source = ./settings.json;

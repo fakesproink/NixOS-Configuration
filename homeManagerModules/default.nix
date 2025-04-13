@@ -2,7 +2,6 @@
   imports = [
     # general/gui apps
     ./discord/discord.nix
-    ./betterdiscord/betterdiscord.nix
     ./firefox/firefox.nix
     ./zeditor/zeditor.nix
     ./waybar/waybar.nix

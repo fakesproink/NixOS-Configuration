@@ -7,5 +7,10 @@
   };
 
   programs.fish.enable = true;
+
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = [ "sproink" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
   # programs.zsh.enable = true;
 }

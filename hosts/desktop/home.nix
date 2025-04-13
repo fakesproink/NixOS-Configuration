@@ -28,7 +28,6 @@
   #];
 
   discord.enable = true;
-  betterdiscord.enable = true;
   firefox.enable = true;
   zeditor.enable = true;
   waybar.enable = true;
