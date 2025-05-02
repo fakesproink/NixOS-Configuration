@@ -11,7 +11,7 @@ this is my config for NixOS with Home Manager. feel free to look around and copy
 - browser: firefox
 - terminal: ghostty
 - shell: fish
-- editor: zed, neovim (WIP)
+- editor: zed, neovim
 - window manager: hyprland
 
 # screenshots
