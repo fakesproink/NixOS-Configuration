@@ -19,6 +19,10 @@
               enable = false;
             };
 
+            nixvim = {
+              enable = false;
+            };
+
             wofi = {
               enable = true;
             };

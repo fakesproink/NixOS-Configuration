@@ -24,9 +24,15 @@
     stylix = {
       url = "github:danth/stylix";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, ... }@inputs: {
+  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, ... }@inputs:
+  {
     nixosConfigurations = {
       sproink-nix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -46,6 +52,7 @@
       modules = [
         ./homeManagerModules/hyprland/hyprland.nix
         ./home.nix
+        nixvim.homeManagerModules.nixvim
         {
           wayland.windowManager.hyprland = {
             package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
