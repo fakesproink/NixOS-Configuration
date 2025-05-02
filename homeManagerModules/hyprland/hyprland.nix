@@ -15,6 +15,7 @@
     ];
 
     services.hyprpaper.enable = true;
+    services.blueman-applet.enable = true;
 
     wayland.windowManager.hyprland = {
       enable = true;
