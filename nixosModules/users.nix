@@ -13,7 +13,7 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
-  hardawre.bluetooth.enable = true;
+  hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   # programs.zsh.enable = true;
 }
