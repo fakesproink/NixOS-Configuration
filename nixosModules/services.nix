@@ -14,6 +14,7 @@
 
     udisks2.enable = true;
     gvfs.enable = true;
+    blueman.enable = true;
   };
 
   programs.hyprland.enable = true;

@@ -12,5 +12,8 @@
   users.groups.libvirtd.members = [ "sproink" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
+
+  hardawre.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
   # programs.zsh.enable = true;
 }
