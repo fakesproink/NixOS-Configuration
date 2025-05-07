@@ -6,6 +6,7 @@ this is my config for NixOS with Home Manager. feel free to look around and copy
 - [TheMaxMur's dotfiles](https://github.com/TheMaxMur/NixOS-Configuration)
 - [The NixOS Manual](https://nixos.org/manual/nixos/unstable/)
 - [notusknot's dotfiles](https://github.com/notusknot/dotfiles-nix)
+- [Vimjoyer](https://github.com/vimjoyer)
 
 # info:
 - browser: firefox
