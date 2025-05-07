@@ -42,6 +42,7 @@
           "dnd"
           "mpris"
           "notifications"
+          "buttons-grid"
         ];
 
         widget-config = {
