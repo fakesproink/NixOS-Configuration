@@ -1,4 +1,4 @@
-# ❄️ fakesproink's NixOS config
+# ❄️ NixOS config
 
 this is my config for NixOS with Home Manager. feel free to look around and copy if you want!
 
