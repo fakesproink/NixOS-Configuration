@@ -20,6 +20,7 @@
         noice.enable = true;
         numbertoggle.enable = true;
         autoclose.enable = true;
+        auto-save.enable = true;
 
         web-devicons = {
           enable = true;
