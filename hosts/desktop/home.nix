@@ -37,6 +37,7 @@
   # dolphin.enable = true;
   thunar.enable = true;
   qemu.enable = true;
+  protonmail.enable = true;
 
   ghostty.enable = true;
   btop.enable = true;

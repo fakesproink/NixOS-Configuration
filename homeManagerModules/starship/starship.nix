@@ -21,6 +21,7 @@
           "$git_status"
           "[](fg:base07 bg:#a3be8c)"
           "$c"
+          "$cpp"
           "$rust"
           "$golang"
           "$nodejs"
@@ -85,6 +86,13 @@
 
         c = {
           symbol = "";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
+        };
+
+        cpp = {
+          disabled = false;
+          symbol = "";
           style = "bg:#a3be8c";
           format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };
