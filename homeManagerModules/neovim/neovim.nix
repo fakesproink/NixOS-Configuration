@@ -21,7 +21,7 @@
         numbertoggle.enable = true;
         autoclose.enable = true;
         auto-save.enable = true;
-        indent-o-matic.enable = true;
+        guess-indent.enable = true;
 
         web-devicons = {
           enable = true;
