@@ -12,8 +12,8 @@
     ./thunar/thunar.nix
     ./swaync/swaync.nix
     ./qemu/qemu.nix
-    ./protonmail/protonmail.nix
-
+    ./hyprlock/hyprlock.nix
+    
     # terminal
     ./ghostty/ghostty.nix
     ./unzip/unzip.nix

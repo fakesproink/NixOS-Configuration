@@ -22,6 +22,7 @@
         autoclose.enable = true;
         auto-save.enable = true;
         guess-indent.enable = true;
+        comment.enable = true;
 
         web-devicons = {
           enable = true;

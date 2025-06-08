@@ -42,7 +42,6 @@
           "dnd"
           "mpris"
           "notifications"
-          "buttons-grid"
         ];
 
         widget-config = {
@@ -70,7 +69,7 @@
           mpris = {
             image-size = 96;
             blur = true;
-          };
+          }; 
         };
       };
       # style = builtins.readFile "${./style.css}";

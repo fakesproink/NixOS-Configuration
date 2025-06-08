@@ -32,6 +32,7 @@
         "$fileManager" = "thunar";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
+        "$lock" = "hyprlock";
 
         exec-once = [
           "waybar"
@@ -44,8 +45,8 @@
         ];
 
         general = {
-          gaps_in = 5;
-          gaps_out = 20;
+          gaps_in = 3;
+          gaps_out = 10;
           border_size = 2;
           #"col.active_border" = "rgb(8fbcbb)";
           #"col.inactive_border" = "rgb(3b4252)";
@@ -133,6 +134,7 @@
           "$mainMod, P, pseudo,"
           "$mainMod, J, togglesplit,"
           "$mainMod, B, exec, $browser"
+          "$mainMod, L, exec, $lock"
           "$mainMod, PRINT, exec, hyprshot -m region"
           "$mainMod SHIFT, N, exec, swaync-client -t -sw"
           "$mainMod SHIFT, H, movewindow, l"

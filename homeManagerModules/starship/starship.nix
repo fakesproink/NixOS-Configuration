@@ -30,6 +30,7 @@
           "$kotlin"
           "$haskell"
           "$python"
+          "$nix_shell"
           "[](fg:#a3be8c bg:base03)"
           "$time"
           "[ ](fg:base03)"
@@ -129,6 +130,13 @@
 
         python = {
           symbol = "";
+          style = "bg:#a3be8c";
+          format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
+        };
+
+        nix_shell = {
+          disabled = false;
+          symbol = "";
           style = "bg:#a3be8c";
           format = "[[ $symbol ($version) ](fg:base06 bg:#a3be8c)]($style)";
         };

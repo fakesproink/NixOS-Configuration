@@ -33,12 +33,12 @@
   waybar.enable = true;
   hyprshot.enable = true;
   hyprland.enable = true;
+  hyprlock.enable = true;
   swaync.enable = true;
   # dolphin.enable = true;
   thunar.enable = true;
   qemu.enable = true;
-  protonmail.enable = true;
-
+  
   ghostty.enable = true;
   btop.enable = true;
   unzip.enable = true;

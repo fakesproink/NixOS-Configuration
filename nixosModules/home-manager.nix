@@ -12,11 +12,15 @@
             package = pkgs.zafiro-icons;
             dark = "Zafiro-icons-Dark";
             light = "Zafiro-icons-Light";
-          };
+          }; 
 
           targets = {
             waybar = {
               enable = false;
+            };
+
+            hyprlock = {
+              useWallpaper = true;
             };
 
             nixvim = {
