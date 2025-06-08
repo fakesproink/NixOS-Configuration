@@ -7,8 +7,13 @@
   config = lib.mkIf config.wofi.enable {
     programs.wofi = {
       enable = true;
-      style = lib.mkDefault ''
-        ${./style.css}
+
+      settings = { 
+        width = "30%";
+      };
+
+      style = ''
+        #text { margin-left: 5px; margin-right: 5px; }
       '';
     };
   };

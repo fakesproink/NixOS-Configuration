@@ -9,9 +9,10 @@
   config = lib.mkIf config.hyprland.enable {
     home.packages = with pkgs; [
       wofi-emoji
-      wl-clipboard
+      copyq
       pavucontrol
       lxqt.lxqt-policykit
+      pipes
     ];
 
     services.hyprpaper.enable = true;
@@ -33,6 +34,7 @@
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
         "$lock" = "hyprlock";
+        "$emoji" = "wofi-emoji";
 
         exec-once = [
           "waybar"
@@ -40,6 +42,7 @@
           "swaync"
           "lxqt-policykit-agent"
           "udiskie"
+          "copyq"
           "openrgb --device \"Razer Huntsman V2\" --color 88c0d0 --mode static --brightness 100"
           "openrgb --device \"Razer Deathadder Essential V2\" --color 00ff00 --mode static --brightness 100"
         ];
@@ -134,7 +137,8 @@
           "$mainMod, P, pseudo,"
           "$mainMod, J, togglesplit,"
           "$mainMod, B, exec, $browser"
-          "$mainMod, L, exec, $lock"
+          "$mainMod, L, exec, $lock" 
+          "$mainMod, Z, exec, $emoji"
           "$mainMod, PRINT, exec, hyprshot -m region"
           "$mainMod SHIFT, N, exec, swaync-client -t -sw"
           "$mainMod SHIFT, H, movewindow, l"
