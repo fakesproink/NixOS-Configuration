@@ -20,4 +20,3 @@ this is my config for NixOS with Home Manager. feel free to look around and copy
 ![desktop2.png](screenshots/desktop2.png)
 ![desktop3.png](screenshots/desktop3.png)
 ![desktop4.png](screenshots/desktop4.png)
-![desktop5.png](screenshots/desktop5.png)
