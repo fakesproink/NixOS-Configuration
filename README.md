@@ -20,3 +20,6 @@ this is my config for NixOS with Home Manager. feel free to look around and copy
 ![desktop2.png](screenshots/desktop2.png)
 ![desktop3.png](screenshots/desktop3.png)
 ![desktop4.png](screenshots/desktop4.png)
+
+# star history
+[![Star History Chart](https://api.star-history.com/svg?repos=fakesproink/NixOS-Configuration&type=Timeline)](https://www.star-history.com/#fakesproink/NixOS-Configuration&Timeline)
