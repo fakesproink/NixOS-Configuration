@@ -10,6 +10,7 @@
       pinentry
       git-credential-manager
       cargo
+      p7zip
     ];
 
     programs.git = {
