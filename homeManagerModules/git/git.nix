@@ -11,6 +11,7 @@
       git-credential-manager
       cargo
       p7zip
+      steam-run
     ];
 
     programs.git = {

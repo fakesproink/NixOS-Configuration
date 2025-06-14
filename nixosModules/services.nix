@@ -18,4 +18,10 @@
   };
 
   programs.hyprland.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      glibc
+    ];
+  };
 }

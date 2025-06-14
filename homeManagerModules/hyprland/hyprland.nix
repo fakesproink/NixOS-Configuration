@@ -33,7 +33,7 @@
         "$fileManager" = "thunar";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
-        "$lock" = "hyprlock";
+        "$ctrlaltdel" = "wlogout";
         "$emoji" = "wofi-emoji";
 
         exec-once = [
@@ -137,7 +137,7 @@
           "$mainMod, P, pseudo,"
           "$mainMod, J, togglesplit,"
           "$mainMod, B, exec, $browser"
-          "$mainMod, L, exec, $lock" 
+          "CTRL ALT, Delete, $ctrlaltdel"
           "$mainMod, Z, exec, $emoji"
           "$mainMod, PRINT, exec, hyprshot -m region"
           "$mainMod SHIFT, N, exec, swaync-client -t -sw"

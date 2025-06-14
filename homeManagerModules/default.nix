@@ -13,6 +13,7 @@
     ./swaync/swaync.nix
     ./qemu/qemu.nix
     ./hyprlock/hyprlock.nix
+    ./wlogout/wlogout.nix
     
     # terminal
     ./ghostty/ghostty.nix
