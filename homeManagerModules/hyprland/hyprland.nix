@@ -33,7 +33,6 @@
         "$fileManager" = "thunar";
         "$menu" = "wofi --show drun";
         "$browser" = "firefox";
-        "$ctrlaltdel" = "wlogout";
         "$emoji" = "wofi-emoji";
 
         exec-once = [
@@ -70,7 +69,7 @@
             #color = "rgba(1a1a1aee)";
           };
 
-          blur = {
+     blur = {
             enabled = true;
             size = 3;
             passes = 1;
@@ -137,7 +136,7 @@
           "$mainMod, P, pseudo,"
           "$mainMod, J, togglesplit,"
           "$mainMod, B, exec, $browser"
-          "CTRL ALT, Delete, $ctrlaltdel"
+          "CTRL ALT, Delete, exec, wlogout"
           "$mainMod, Z, exec, $emoji"
           "$mainMod, PRINT, exec, hyprshot -m region"
           "$mainMod SHIFT, N, exec, swaync-client -t -sw"
