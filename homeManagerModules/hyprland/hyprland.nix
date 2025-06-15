@@ -69,7 +69,7 @@
             #color = "rgba(1a1a1aee)";
           };
 
-     blur = {
+          blur = {
             enabled = true;
             size = 3;
             passes = 1;
@@ -195,6 +195,7 @@
 
         input = {
           kb_layout = "us";
+          kb_options = "ctrl:nocaps";
           follow_mouse = 1;
 
           sensitivity = 0.0;
