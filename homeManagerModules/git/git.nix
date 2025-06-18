@@ -8,6 +8,7 @@
     home.packages = with pkgs; [
       pass
       pinentry
+      pinentry-curses
       git-credential-manager
       cargo
       p7zip
@@ -33,6 +34,8 @@
     programs.gpg.enable = true;
     services.gpg-agent = {
       enable = true;
+      pinentryPackage = pkgs.pinentry-curses;
+      defaultCacheTtl = 1800;
     };
   };
 }
