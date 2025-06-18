@@ -57,7 +57,7 @@
         }
 
         window {
-	        background-color: rgba(0, 0, 0, 0.9);
+	        background-color: rgba(46, 52, 64, 0.9);
         }
 
         button {
@@ -78,27 +78,27 @@
         }
 
         #lock {
-          background-image: url("./images/lock.png");
+          background-image: url("${./images/lock.png}");
         }
 
         #logout {
-          background-image: url("./images/logout.png");
+          background-image: url("${./images/logout.png}");
         }
 
         #suspend {
-          background-image: url("./images/suspend.png");
+          background-image: url("${./images/suspend.png}");
         }
 
         #hibernate {
-          background-image: url("./images/hibernate.png");
+          background-image: url("${./images/hibernate.png}");
         }
 
         #shutdown {
-          background-image: url("./images/shutdown.png");
+          background-image: url("${./images/shutdown.png}");
         }
 
         #restart {
-          background-image: url("./images/reboot.png");
+          background-image: url("${./images/reboot.png}");
         }
       '';
     };
