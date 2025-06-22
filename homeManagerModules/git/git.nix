@@ -7,8 +7,7 @@
   config = lib.mkIf config.git.enable {
     home.packages = with pkgs; [
       pass
-      pinentry
-      pinentry-curses
+      pinentry 
       git-credential-manager
       cargo
       p7zip
@@ -33,7 +32,8 @@
 
     programs.gpg.enable = true;
     services.gpg-agent = {
-      enable = true; 
+      enable = true;
+      pinentryPackage = pkgs.pinentry-curses;
     };
   };
 }
