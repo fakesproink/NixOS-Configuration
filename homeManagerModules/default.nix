@@ -8,6 +8,7 @@
     ./hyprland/hyprland.nix
     ./hyprshot/hyprshot.nix
     ./wofi/wofi.nix
+    ./obsidian/obsidian.nix
     ./dolphin/dolphin.nix
     ./thunar/thunar.nix
     ./swaync/swaync.nix

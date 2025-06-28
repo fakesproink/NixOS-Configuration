@@ -39,6 +39,7 @@
   wlogout.enable = true;
   thunar.enable = true;
   qemu.enable = true;
+  obsidian.enable = true;
   
   ghostty.enable = true;
   btop.enable = true;

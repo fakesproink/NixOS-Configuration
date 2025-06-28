@@ -4,7 +4,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     sharedModules = [
-      inputs.self.outputs.homeManagerModules.default
+      /* inputs.self.outputs.homeManagerModules.default */
       {
         stylix = {
           iconTheme = {
