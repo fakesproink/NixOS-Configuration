@@ -38,7 +38,7 @@
 
         {
           label = "shutdown";
-          action = "systemctl shutdown";
+          action = "systemctl poweroff";
           text = "shutdown";
           keybind = "s";
         }
