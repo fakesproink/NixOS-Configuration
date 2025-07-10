@@ -12,6 +12,7 @@
       cargo
       p7zip
       steam-run
+      libreoffice-qt6
     ];
 
     programs.git = {
