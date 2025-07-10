@@ -13,6 +13,7 @@
       p7zip
       steam-run
       libreoffice-qt6
+      dosbox-x
     ];
 
     programs.git = {
