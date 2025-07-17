@@ -12,6 +12,11 @@
       pulse.enable = true;
     };
 
+    syncthing = {
+      enable = true;
+      openDefaultPorts = true;
+    };
+
     udisks2.enable = true;
     gvfs.enable = true;
     blueman.enable = true;
