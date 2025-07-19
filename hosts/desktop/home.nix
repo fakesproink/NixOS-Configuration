@@ -40,6 +40,7 @@
   thunar.enable = true;
   qemu.enable = true;
   obsidian.enable = true;
+  anki.enable = true;
   
   ghostty.enable = true;
   btop.enable = true;

@@ -15,6 +15,7 @@
     ./qemu/qemu.nix
     ./hyprlock/hyprlock.nix
     ./wlogout/wlogout.nix
+    ./anki/anki.nix
     
     # terminal
     ./ghostty/ghostty.nix
