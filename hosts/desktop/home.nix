@@ -35,7 +35,7 @@
   hyprland.enable = true;
   hyprlock.enable = true;
   swaync.enable = true;
-  # dolphin.enable = true;
+  /* dolphin.enable = true; */
   wlogout.enable = true;
   thunar.enable = true;
   qemu.enable = true;
