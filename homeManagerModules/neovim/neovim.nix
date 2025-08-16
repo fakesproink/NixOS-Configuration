@@ -17,7 +17,7 @@
       plugins = {
         lualine.enable = true;
         barbar.enable = true;
-        /* noice.enable = true; */
+        # noice.enable = true;
         nui.enable = true;
         numbertoggle.enable = true;
         autoclose.enable = true;
