@@ -127,7 +127,7 @@
 
         "$mainMod" = "SUPER";
         bind = [
-          "$mainMod, Return, exec, $terminal"
+          "$mainMod, Q, exec, $terminal"
           "$mainMod, C, killactive"
           "$mainMod, M, exit"
           "$mainMod, E, exec, $fileManager"
