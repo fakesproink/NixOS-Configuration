@@ -41,6 +41,7 @@
   qemu.enable = true;
   obsidian.enable = true;
   anki.enable = true;
+  spotify.enable = true;
   
   ghostty.enable = true;
   btop.enable = true;
