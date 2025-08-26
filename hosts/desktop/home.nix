@@ -53,6 +53,7 @@
   cava.enable = true;
   wofi.enable = true;
   udiskie.enable = true;
+  clock-rs.enable = true;
 
   fish.enable = true;
   starship.enable = true;

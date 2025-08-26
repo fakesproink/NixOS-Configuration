@@ -4,12 +4,12 @@
   };
 
   config = lib.mkIf config.anki.enable {
-    home.packages = with pkgs; [
-      anki-bin
-    ];
+    # home.packages = with pkgs; [
+    #   anki-bin
+    # ];
 
-    # programs.anki = {
-    #   enable = true;
-    # };
+    programs.anki = {
+      enable = true;
+    };
   };
 }

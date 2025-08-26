@@ -27,6 +27,7 @@
     ./gh/gh.nix
     ./fastfetch/fastfetch.nix
     ./cava/cava.nix
+    ./clock-rs/clock-rs.nix
     ./btop/btop.nix
 
     # system/misc
