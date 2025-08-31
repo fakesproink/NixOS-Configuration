@@ -18,6 +18,7 @@
     ./spotify/spotify.nix
     ./anki/anki.nix
     ./feh/feh.nix
+    ./obs/obs.nix
     
     # terminal
     ./ghostty/ghostty.nix
