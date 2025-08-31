@@ -43,7 +43,7 @@
   anki.enable = true;
   spotify.enable = true;
   feh.enable = true;
-  obs-studio.enable = true;
+  obs.enable = true;
   
   ghostty.enable = true;
   btop.enable = true;
