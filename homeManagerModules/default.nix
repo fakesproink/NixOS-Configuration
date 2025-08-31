@@ -17,6 +17,7 @@
     ./wlogout/wlogout.nix
     ./spotify/spotify.nix
     ./anki/anki.nix
+    ./feh/feh.nix
     
     # terminal
     ./ghostty/ghostty.nix
