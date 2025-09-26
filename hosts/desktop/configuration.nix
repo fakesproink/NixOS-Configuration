@@ -40,11 +40,6 @@
   };
 
   # automounts disks, comment out if on another device
-  fileSystems."/home/sproink/public/misc_mountpoints" = {
-    device = "/dev/disk/by-label/Stuff";
-    fsType = "ntfs-3g";
-    options = [ "rw" "uid=1000"];
-  };
   # services.openssh.enable = true;
 
   # Open ports in the firewall.

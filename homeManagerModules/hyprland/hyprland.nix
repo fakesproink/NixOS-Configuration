@@ -214,8 +214,8 @@
       };
 
       extraConfig = ''
-        monitor=eDP-1, 1920x1080@60, 0x-220, 1
-        monitor=HDMI-A-1, 1440x900@60, 1920x0, 1
+        monitor=HDMI-A-1, 1920x1080@120, 0x0, 1
+        monitor=HDMI-A-2, 1920x1080@120, -1920x0, 1
       '';
      };
   };

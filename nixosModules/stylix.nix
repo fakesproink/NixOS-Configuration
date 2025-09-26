@@ -7,6 +7,7 @@
     image = ./../homeManagerModules/hyprland/wallpaper/nord-wallpapers-v0-mpyy5m6t1t9a1.png;
     polarity = "dark";
     autoEnable = true;
+    targets.grub.enable = false;
 
     cursor = {
       package = pkgs.capitaine-cursors-themed;

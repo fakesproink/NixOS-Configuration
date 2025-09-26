@@ -18,19 +18,14 @@
 
     programs.git = {
       enable = true;
-      userName = "sproinker";
+      userName = "fakesproink";
       userEmail = "bsushi308@gmail.com";
 
       signing = {
-        key = "EBD65F1874C42DFB";
+        key = "A8058885A3A0E4D3";
         signByDefault = true;
       };
-      #extraConfig = {
-      #  credential.helper = "manager";
-      #  credential."https://github.com".username = "fakesproink";
-      #  credential.credentialStore = "cache";
-      #};
-    };
+    }; 
 
     programs.gpg.enable = true;
     services.gpg-agent = {

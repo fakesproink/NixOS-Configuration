@@ -123,8 +123,8 @@
           "hyprland/workspaces" = {
             persistent-workspaces = {
               "*" = 12;
-              eDP-1 = [ 1 2 3 4 5 6 7 8 9 10 11 12 ];
               HDMI-A-1 = [ 1 2 3 4 5 6 7 8 9 10 11 12 ];
+              HDMI-A-2 = [ 1 2 3 4 5 6 7 8 9 10 11 12 ];
             };
           };
         }

@@ -3,10 +3,14 @@
     plymouth.enable = true;
 
     loader = {
-      systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
-      systemd-boot.consoleMode = "max";
-    };
+      grub = {
+        enable = true;
+        devices = [ "nodev" ];
+        efiSupport = true;
+        useOSProber = true;
+      };
+    }; 
 
     consoleLogLevel = 0;
     supportedFilesystems = [ "ntfs" ];
@@ -20,4 +24,6 @@
       "udev.log_priority=3"
     ];
   };
+
+  time.hardwareClockInLocalTime = true;
 }
