@@ -21,10 +21,10 @@
       userName = "fakesproink";
       userEmail = "bsushi308@gmail.com";
 
-      signing = {
-        key = "A8058885A3A0E4D3";
-        signByDefault = true;
-      };
+      # signing = {
+      #   key = "A8058885A3A0E4D3";
+      #   signByDefault = true;
+      # };
     }; 
 
     programs.gpg.enable = true;
