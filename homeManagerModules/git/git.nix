@@ -25,6 +25,12 @@
       #   key = "A8058885A3A0E4D3";
       #   signByDefault = true;
       # };
+
+      extraConfig = {
+        commit.gpgsign = true;
+        gpg.format = "ssh";
+        user.signingkey = "~/.ssh/id_ed25519.pub";
+      };
     }; 
 
     programs.gpg.enable = true;
