@@ -1,5 +1,3 @@
-# i'll give you something to commit here
-
 { pkgs, lib, config, ... }: {
   options = {
     hyprland.enable =
