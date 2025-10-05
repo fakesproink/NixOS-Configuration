@@ -14,6 +14,8 @@
       steam-run
       libreoffice-qt6
       dosbox-x
+      quickemu
+      unityhub
     ];
 
     programs.git = {
