@@ -10,6 +10,7 @@
       pinentry 
       git-credential-manager
       cargo
+      pipes
       p7zip
       steam-run
       libreoffice-qt6
