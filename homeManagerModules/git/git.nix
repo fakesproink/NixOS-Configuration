@@ -13,10 +13,12 @@
       pipes
       p7zip
       steam-run
+      wget
       libreoffice-qt6
       dosbox-x
       quickemu
       unityhub
+      libcs50
     ];
 
     programs.git = {

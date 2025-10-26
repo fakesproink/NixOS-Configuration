@@ -12,7 +12,7 @@
     programs.nixvim = {
       enable = true;
       defaultEditor = true;
-      colorschemes.nord.enable = true;
+      colorschemes.nord.enable = true; 
 
       plugins = {
         lualine.enable = true;
@@ -23,7 +23,8 @@
         autoclose.enable = true;
         auto-save.enable = true;
         guess-indent.enable = true;
-        comment.enable = true; 
+        comment.enable = true;
+        indent-blankline.enable = true;
 
         web-devicons = {
           enable = true;
@@ -49,6 +50,8 @@
             { name = "nvim_lsp"; }
             { name = "path"; }
             { name = "buffer"; }
+            { name = "cmdline"; }
+            { name = "nvim-cmp"; }
           ];
         };
       };

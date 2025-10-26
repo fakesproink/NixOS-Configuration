@@ -46,7 +46,7 @@
 
         general = {
           gaps_in = 3;
-          gaps_out = 10;
+          gaps_out = 7;
           border_size = 2;
           #"col.active_border" = "rgb(8fbcbb)";
           #"col.inactive_border" = "rgb(3b4252)";
@@ -56,7 +56,7 @@
         };
 
         decoration = {
-          rounding = 10;
+          rounding = 3;
           active_opacity = 1.0;
           inactive_opacity = 1.0;
 

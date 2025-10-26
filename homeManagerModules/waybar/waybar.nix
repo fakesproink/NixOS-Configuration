@@ -16,10 +16,10 @@
 
           spacing = 0;
           height = 0;
-          margin-top = 8;
-          margin-right = 8;
+          margin-top = 7;
+          margin-right = 7;
           margin-bottom = 0;
-          margin-left = 8;
+          margin-left = 7;
 
           modules-left = [
             "hyprland/workspaces"

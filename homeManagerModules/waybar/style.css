@@ -20,14 +20,13 @@
     min-height: 0;
     font-family: "JetBrains Mono";
     font-weight: 500;
-    font-size: 14px;
-    padding: 0;
-    border-radius: 3px;
+    font-size: 14px; 
+    border-radius: 5px; 
 }
 
 window#waybar {
-    background: @base00;
-    border: 2px solid @base03;
+    background: @base00; 
+    border: 2px solid @base03; 
 }
 
 tooltip {
@@ -35,8 +34,8 @@ tooltip {
     border: 2px solid @base03;
 }
 
-#clock,
 #tray,
+#clock,
 #cpu,
 #memory,
 #battery,
@@ -46,33 +45,45 @@ tooltip {
     color: @base06;
     background-color: @base02;
     border: 2px solid @base03;
-    margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
+    margin: 10px 4.5px 10px 2px;
+    padding: 0px 10px;
 }
 
 #custom-notification {
-    padding: 8px 12px;
+    margin-right: 10px;
+    padding: 8px 10px;
 }
 
 #workspaces {
     background-color: @base02;
-    margin: 6px 0px 6px 6px;
-    border: 2px solid @base03;
+    margin: 10px 4.5px 10px 7px;
+    padding: 0px 0px;
+    background-color: @base00;
 }
 
 .modules-left #workspaces button {
     all: initial;
     min-width: 0;
-    box-shadow: inset 0 -3px transparent;
-    padding: 5px 10px;
-    margin: 0px;
+    box-shadow: inset 0 -3px transparent; 
+    padding: 0px 13px; 
     color: @base06;
-    border-radius: 3px;
+    /* margin-left: 3px; */
+    /* margin-right: 2px; */
+    /* margin-top: 4px; */
+    /* margin-bottom: 4px; */
+    margin: 0px 2px 0px 4px;
+    background-color: @base02;
+    border-radius: 5px;
+    border: 1px solid @base03;
 }
 
 .modules-left #workspaces button.active {
     background-color: @base0D;
-    padding: 5px 10px;
+    color: @base00;
+    padding: 0px 13px;
+    /* margin-left: 3px; */
+    /* margin-right: 2px; */
+    margin: 0px 2px 0px 4px;
 }
 
 #workspaces button.focused {
