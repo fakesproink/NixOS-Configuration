@@ -9,6 +9,7 @@
       pass
       pinentry 
       git-credential-manager
+      carlito
       cargo
       pipes
       p7zip

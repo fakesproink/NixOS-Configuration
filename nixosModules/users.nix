@@ -7,6 +7,12 @@
   };
 
   programs.fish.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      libcs50
+    ];
+  };
 
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = [ "sproink" ];
