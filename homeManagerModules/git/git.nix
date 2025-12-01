@@ -7,7 +7,7 @@
   config = lib.mkIf config.git.enable {
     home.packages = with pkgs; [
       pass
-      pinentry 
+      /* pinentry */ 
       git-credential-manager
       carlito
       cargo
