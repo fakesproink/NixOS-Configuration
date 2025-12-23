@@ -38,8 +38,8 @@
           enable = true;
           git.enable = true;
           hijackCursor = true;
-          openOnSetup = true;
-          openOnSetupFile = true;
+          # openOnSetup = true;
+          # openOnSetupFile = true;
         };
 
         cmp = {

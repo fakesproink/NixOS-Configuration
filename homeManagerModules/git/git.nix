@@ -20,6 +20,9 @@
       quickemu
       unityhub
       libcs50
+      unrar
+      globe-cli
+      terminal-toys
     ];
 
     programs.git = {
