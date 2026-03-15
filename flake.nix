@@ -32,9 +32,14 @@
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
     };
+
+    hy3 = {
+      url = "github:outfoxxed/hy3";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
 
-  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, ... }@inputs:
+  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, hy3, ... }@inputs:
   {
     nixosConfigurations = {
       sproink-nix = nixpkgs.lib.nixosSystem {
@@ -58,8 +63,10 @@
         nixvim.homeManagerModules.nixvim
         {
           wayland.windowManager.hyprland = {
+            enable = true;
             package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
             portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+            plugins = [ hy3.packages.x86_64-linux.hy3 ];
           };
         }
       ];

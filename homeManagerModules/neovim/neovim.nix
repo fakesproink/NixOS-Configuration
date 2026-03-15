@@ -12,7 +12,14 @@
     programs.nixvim = {
       enable = true;
       defaultEditor = true;
-      colorschemes.nord.enable = true; 
+      colorschemes.nord.enable = true;
+
+      keymaps = [
+        {
+          action = "<cmd>NvimTreeToggle<CR>";
+          key = "<Tab>";
+        }
+      ];
 
       plugins = {
         lualine.enable = true;
