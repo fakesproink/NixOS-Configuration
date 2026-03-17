@@ -41,7 +41,7 @@
           "udiskie"
           "copyq"
           "openrgb --device \"Razer Huntsman V2\" --color 88c0d0 --mode static --brightness 100"
-          "openrgb --device \"Razer Deathadder Essential V2\" --color 00ff00 --mode static --brightness 100"
+          "openrgb --device \"Razer Deathadder Essential V2\" --color 00ff00 --mode static --brightness 100" 
         ];
 
         general = {

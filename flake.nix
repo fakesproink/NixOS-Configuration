@@ -1,4 +1,4 @@
-# flake.nix
+
 {
   description = "nix flake (hopefully i dont lose my sanity configuring all this)";
 
