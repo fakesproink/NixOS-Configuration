@@ -33,6 +33,19 @@
         comment.enable = true;
         indent-blankline.enable = true;
 
+        presence = {
+          enable = true;
+          autoLoad = true;
+
+          settings = {
+            auto_update = true;
+            main_image = "neovim";
+            client_id = "1487037978202079232";
+            enable_line_number = true;
+            show_time = true;
+          };
+        };
+
         web-devicons = {
           enable = true;
           settings = {

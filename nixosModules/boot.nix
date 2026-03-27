@@ -9,6 +9,7 @@
         devices = [ "nodev" ];
         efiSupport = true;
         useOSProber = true;
+        splashImage = ./grub-bg.jpg;
       };
     }; 
 
