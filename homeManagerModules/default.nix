@@ -19,6 +19,8 @@
     ./anki/anki.nix
     ./feh/feh.nix
     ./obs/obs.nix
+    ./zoom/zoom.nix
+    ./prism/prism.nix
     
     # terminal
     ./ghostty/ghostty.nix

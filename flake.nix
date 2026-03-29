@@ -1,4 +1,4 @@
-
+# flake
 {
   description = "nix flake (hopefully i dont lose my sanity configuring all this)";
 
@@ -32,14 +32,9 @@
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
     };
-
-    hy3 = {
-      url = "github:outfoxxed/hy3";
-      inputs.hyprland.follows = "hyprland";
-    };
   };
 
-  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, hy3, ... }@inputs:
+  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, ... }@inputs:
   {
     nixosConfigurations = {
       sproink-nix = nixpkgs.lib.nixosSystem {
@@ -66,7 +61,6 @@
             enable = true;
             package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
             portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-            plugins = [ hy3.packages.x86_64-linux.hy3 ];
           };
         }
       ];

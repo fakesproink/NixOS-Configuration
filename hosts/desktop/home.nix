@@ -8,25 +8,6 @@
     ./../../homeManagerModules
   ];
 
-  #home.packages = with pkgs; [
-  #  unzip
-  #  nwg-look
-  #  xfce.thunar
-  #  cava
-  #  jetbrains-mono
-  #  git
-  #  hyprpaper
-  #  discord
-  #  betterdiscordctl
-  #  hyprshot
-  #  hyprpolkitagent
-  #  swaynotificationcenter
-  #  feh
-  #  neovim
-  #  vimPlugins.LazyVim
-  #  zed-editor
-  #];
-
   discord.enable = true;
   firefox.enable = true;
   zeditor.enable = true;
@@ -44,7 +25,9 @@
   spotify.enable = true;
   feh.enable = true;
   obs.enable = true;
-  
+  zoom.enable = true;
+  prism.enable = true;
+
   ghostty.enable = true;
   btop.enable = true;
   unzip.enable = true;

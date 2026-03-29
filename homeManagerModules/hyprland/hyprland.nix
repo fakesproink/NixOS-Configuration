@@ -208,6 +208,7 @@
           "XCURSOR,Capitaine Cursors (Nord)"
           "NIXOS_OZONE_WL, 1"
           "QT_QPA_PLATFORMTHEME,qt6ct"
+          "QT_STYLE_OVERRIDE,"
         ];
       };
 

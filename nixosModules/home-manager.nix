@@ -15,28 +15,38 @@
           }; 
 
           targets = {
-            waybar = {
-              enable = false;
-            };
+            # waybar = {
+            #   enable = false;
+            # };
+            #
+            # hyprlock = {
+            #   useWallpaper = true;
+            # };
+            #
+            # nixvim = {
+            #   enable = false;
+            # };
+            #
+            # wofi = {
+            #   enable = true;
+            # };
+            #
+            # zed = {
+            #   enable = false;
+            # };
+            #
+            # qt = {
+            #   enable = true;
+            # };
 
-            hyprlock = {
-              useWallpaper = true;
-            };
-
-            nixvim = {
-              enable = false;
-            };
-
-            wofi = {
-              enable = true;
-            };
-
-            zed = {
-              enable = false;
-            };
-
+            waybar.enable = false;
+            hyprlock.useWallpaper = true;
+            nixvim.enable = false;
+            wofi.enable = true;
+            zed.enable = false;
             qt = {
               enable = true;
+              standardDialogs = "kde";
             };
           };
         };
