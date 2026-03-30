@@ -184,6 +184,7 @@
           "$mainMod ALT, =, focusworkspaceoncurrentmonitor, 12"
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
+          "$mainMod, Space, exec, hyprctl switchxkblayout all next"
         ];
 
         bindm = [
@@ -192,7 +193,7 @@
         ];
 
         input = {
-          kb_layout = "us";
+          kb_layout = "us,th";
           kb_options = "ctrl:nocaps";
           follow_mouse = 1;
 

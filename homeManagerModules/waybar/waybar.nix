@@ -43,6 +43,7 @@
           "hyprland/language" = {
             format = "{}";
             format-en = "EN";
+            format-th = "TH";
           };
 
           "custom/notification" = {
