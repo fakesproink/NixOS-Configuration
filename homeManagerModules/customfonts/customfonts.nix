@@ -9,6 +9,7 @@
       jetbrains-mono
       nerd-fonts.jetbrains-mono
       noto-fonts-cjk-sans
+      sarabun-font
     ];
 
     fonts.fontconfig.enable = true;
