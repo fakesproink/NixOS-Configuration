@@ -224,6 +224,8 @@
         windowrule = match:class org.prismlauncher.PrismLauncher, size 1122 716
         windowrule = match:class zoom, no_initial_focus on        
         windowrule = match:title menu window, no_initial_focus on
+        windowrule = match:class vlc, float on
+        windowrule = match:class vlc, size 732 606
       '';
      };
   };
