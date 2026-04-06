@@ -217,6 +217,13 @@
       extraConfig = ''
         monitor=HDMI-A-1, 1920x1080@120, 0x0, 1
         monitor=HDMI-A-2, 1920x1080@120, -1920x0, 1
+
+        windowrule = match:class thunar, float on
+        windowrule = match:class zoom, float on
+        windowrule = match:class org.prismlauncher.PrismLauncher, float on
+        windowrule = match:class org.prismlauncher.PrismLauncher, size 1122 716
+        windowrule = match:class zoom, no_initial_focus on        
+        windowrule = match:title menu window, no_initial_focus on
       '';
      };
   };
