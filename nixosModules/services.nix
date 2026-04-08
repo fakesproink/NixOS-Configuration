@@ -1,4 +1,9 @@
 { pkgs, ... }: {
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   services = {
     xserver = {
       enable = true;
@@ -23,6 +28,7 @@
     blueman.enable = true;
   };
 
+  programs.steam.enable = true;
   programs.hyprland.enable = true;
   programs.nix-ld = {
     enable = true;

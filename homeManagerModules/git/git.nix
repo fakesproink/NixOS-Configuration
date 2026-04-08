@@ -13,7 +13,6 @@
       cargo
       pipes
       p7zip
-      steam
       vlc
       steam-run
       wget
