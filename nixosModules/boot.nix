@@ -4,6 +4,7 @@
 
     loader = {
       efi.canTouchEfiVariables = true;
+      efi.efiSysMountPoint = "/efi";
       grub = {
         enable = true;
         devices = [ "nodev" ];
