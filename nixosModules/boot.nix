@@ -4,13 +4,14 @@
 
     loader = {
       efi.canTouchEfiVariables = true;
-      efi.efiSysMountPoint = "/efi";
+      efi.efiSysMountPoint = "/boot/efi";
       grub = {
         enable = true;
         devices = [ "nodev" ];
         efiSupport = true;
         useOSProber = true;
         splashImage = ./grub-bg.jpg;
+        configurationLimit = 10;
       };
     }; 
 
@@ -28,4 +29,10 @@
   };
 
   time.hardwareClockInLocalTime = true;
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 }
