@@ -22,6 +22,7 @@
   environment.systemPackages = with pkgs; [
     openrgb-with-all-plugins
   ];
+
   i18n.defaultLocale = "en_US.UTF-8";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -37,7 +38,6 @@
       inherit pkgs;
     };
   };
-
   # automounts disks, comment out if on another device
   # services.openssh.enable = true;
 

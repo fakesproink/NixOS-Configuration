@@ -26,6 +26,7 @@
     udisks2.enable = true;
     gvfs.enable = true;
     blueman.enable = true;
+    dbus.implementation = "dbus";
   };
 
   programs.steam.enable = true;

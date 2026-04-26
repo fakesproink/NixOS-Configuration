@@ -10,14 +10,16 @@
       languagePacks = [ "en-US" ];
 
       profiles.sproink = {
-        extensions = with inputs.nur.legacyPackages.${pkgs.stdenv.hostPlatform.system}.repos.rycee.firefox-addons; [
-          ublock-origin
-          darkreader
-          sponsorblock
-          theme-nord-polar-night
-          mtab
-          docsafterdark
-        ];
+        extensions = {
+          packages = with inputs.firefox-addons.packages."x86_64-linux";  [
+            ublock-origin
+            sponsorblock
+            darkreader
+            docsafterdark
+            theme-nord-polar-night
+            mtab
+          ];
+        };
       };
     };
   };

@@ -32,9 +32,14 @@
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
     };
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, ... }@inputs:
+  outputs = { nixpkgs, nur, hyprland, home-manager, stylix, nixvim, firefox-addons, ... }@inputs:
   {
     nixosConfigurations = {
       sproink-nix = nixpkgs.lib.nixosSystem {
@@ -52,9 +57,10 @@
 
     homeConfigurations."sproink@sproink-nix" = home-manager.lib.homeManagerConfiguration rec {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      extraSpecialArgs = { inherit inputs; };
       modules = [
         ./homeManagerModules/hyprland/hyprland.nix
-        ./home.nix
+        ./hosts/desktop/home.nix
         nixvim.homeManagerModules.nixvim
         {
           wayland.windowManager.hyprland = {
