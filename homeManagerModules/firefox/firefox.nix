@@ -9,16 +9,25 @@
       enable = true;
       languagePacks = [ "en-US" ];
 
-      profiles.sproink = {
-        extensions = {
-          packages = with inputs.firefox-addons.packages."x86_64-linux";  [
-            ublock-origin
-            sponsorblock
-            darkreader
-            docsafterdark
-            theme-nord-polar-night
-            mtab
-          ];
+      profiles = {
+        default = {
+          id = 0;
+          name = "default";
+          isDefault = true;
+          extensions = {
+            packages = with inputs.firefox-addons.packages."x86_64-linux"; [
+              ublock-origin
+              sponsorblock
+              darkreader
+              docsafterdark
+              theme-nord-polar-night
+              mtab
+            ];
+          };
+
+          settings = {
+            "browser.startup.homepage" = "https://google.com";
+          };
         };
       };
     };
