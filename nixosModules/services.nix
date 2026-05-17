@@ -37,4 +37,13 @@
       glibc
     ];
   };
+
+  systemd.services.disable-wakeup-gpp0 = {
+    description = "disable GPP0 wakeup";
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig.Type = "oneshot";
+    script = ''
+      echo GPP0 > /proc/acpi/wakeup
+    '';
+  };
 }

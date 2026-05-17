@@ -31,8 +31,10 @@
         auto-save.enable = true;
         guess-indent.enable = true;
         comment.enable = true;
+        comment.callSetup = false;
         indent-blankline.enable = true;
-
+        transparent.enable = true;
+        
         presence = {
           enable = true;
           autoLoad = true;

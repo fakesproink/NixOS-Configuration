@@ -23,7 +23,10 @@
       libcs50
       unrar
       globe-cli
+      cliamp
       terminal-toys
+      wineWow64Packages.waylandFull
+      winetricks
     ];
 
     programs.git = {

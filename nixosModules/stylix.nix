@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    image = ./../homeManagerModules/hyprland/wallpaper/nord-wallpapers-v0-mpyy5m6t1t9a1.png;
+    image = ./../homeManagerModules/hyprland/wallpaper/IMG_5875.png;
     polarity = "dark";
     autoEnable = true;
     targets.grub.enable = false;
@@ -16,8 +16,8 @@
     };
 
     opacity = {
-      applications = 1.0;
-      terminal = 1.0;
+      applications = 0.85;
+      terminal = 0.85;
       popups = 1.0;
       desktop = 1.0;
     };

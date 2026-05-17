@@ -38,6 +38,25 @@
       inherit pkgs;
     };
   };
+
+  boot.supportedFilesystems = [ "ntfs" ];
+  fileSystems."/run/media/sproink/stuff" = {
+    device = "/dev/disk/by-uuid/B00AF29B0AF25E32";
+    fsType = "ntfs3";
+  };
+
+  # fileSystems =
+  #   let
+  #     ntfs-drives = [
+  #       "/run/media/sproink/stuff"
+  #     ];
+  #   in
+  #   lib.genAttrs ntfs-drives (path: {
+  #     options = [
+  #       "uid=(id -u)"
+  #     ];
+  #   });
+
   # automounts disks, comment out if on another device
   # services.openssh.enable = true;
 
