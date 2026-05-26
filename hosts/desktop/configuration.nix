@@ -39,12 +39,6 @@
     };
   };
 
-  boot.supportedFilesystems = [ "ntfs" ];
-  fileSystems."/run/media/sproink/stuff" = {
-    device = "/dev/disk/by-uuid/B00AF29B0AF25E32";
-    fsType = "ntfs3";
-  };
-
   # fileSystems =
   #   let
   #     ntfs-drives = [
